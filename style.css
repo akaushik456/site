@@ -1,3 +1,14 @@
+*
+{
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
 header{
-    border: 0 rem;
+    width: 100%;
+    display: flex;
+    
 }
