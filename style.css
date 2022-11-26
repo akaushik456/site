@@ -10,26 +10,57 @@ body{
     margin: 0;
     padding: 0;
 }
+ul{
+    list-style: none;
+}
 a{
     text-decoration: none;
     color: #5a5a5a;
 }
+img{
+    cursor: pointer;
+}
 header{
     width: 100%;
     display: flex;
-    
 }
 .one-container{
-    width: 1200px;
+    width: 1360px;
     margin: 0 auto;
-}
-.logo-img{
-    width: 100%;
-}
-.logo-img img{
-    width: 100px;
 }
 nav{
     width:100%;
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 2%;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    position: static;
+    top: 0;
+    z-index: 10;
+}
+.left-img{
+    width: 100%;
+}
+.left-img img{
+    width: 35px;
+    margin-right: 25px;
+}
+.left-img .user-logo{
+    width: 110px;
+}
+.right-img{
+    display: flex;
+    width: 100%;
+    justify-content: end;
+    align-items: center;
+}
+.right-img img{
+    width: 25px;
+    margin-right: 25px;
+}
+.right-img .user-image{
+    width: 50px;
+    border-radius: 50%;
+    margin-right: 0;
 }
