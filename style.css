@@ -112,3 +112,20 @@ nav{
     height: 1px;
     width: 85%;
 }
+.subscribed h3{
+    font-size: 15px;
+    color: #5a5a5a;
+    margin: 20px 0;
+}
+.subscribed a{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    width: fit-content;
+}
+.subscribed a img{
+    width: 25px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
