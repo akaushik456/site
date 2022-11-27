@@ -33,7 +33,7 @@ nav{
     justify-content: space-between;
     padding: 10px 2%;
     box-shadow: 0 0 10px rgba(0,0,0,0.2);
-    position: static;
+    position: sticky;
     top: 0;
     z-index: 10;
 }
@@ -83,4 +83,32 @@ nav{
     margin-right: 15px;
     padding: 10px 10px;
     border-radius: 25px;
+}
+.side-bar{
+    width: 20%;
+    position: fixed;
+    height: 100vh;
+    top: 0;
+    padding-top: 80px;
+    padding-left: 2%;
+}
+.side-bar .shortcut-links a img{
+    width: 20px;
+    margin-right: 20px;
+}
+.shortcut-links a{
+    display: flex;
+    width: fit-content;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+.shortcut-links a:first-child{
+    color: #ed3833;
+}
+.side-bar hr{
+    border: 0;
+    background: #ccc;
+    height: 1px;
+    width: 85%;
 }
