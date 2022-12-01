@@ -298,3 +298,140 @@ nav{
     align-items: center;
     margin-left: 25px;
 }
+.play-video hr{
+    border: 0;
+    height: 1px;
+    background: #ccc;
+    margin: 10px 0;
+}
+.publisher{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+.publisher img{
+    width: 50px;
+    margin-right: 21px;
+    border-radius: 50%;
+}
+.publisher div p{
+    font-size: 18px;
+    font-weight: 700;
+}
+.publisher div span{
+    color: #000;
+}
+.publisher div{
+    flex: 1;
+}
+.publisher button{
+    color: #fff;
+    background: #555;
+    border: 0;
+    padding: 8px 30px;
+    outline: 0;
+    border-radius: 10px;
+}
+.vid-descripition{
+    padding-left: 55px;
+    margin: 15px 0;
+}
+.vid-descripition p{
+    font-size: 15px;
+    color: #5a5a5a;
+    margin-bottom: 5px;
+}
+.vid-descripition h4{
+    font-size: 15px;
+    margin-top: 15px;
+    color: #5a5a5a;
+}
+.add-comment{
+    display: flex;
+    align-items: center;
+    margin: 30px 0;
+}
+.add-comment img{
+    width: 30px;
+    border-radius: 50%;
+    margin-left: 15px;
+}
+.add-comment input{
+    outline: none;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    width: 100%;
+    padding-top: 10px;
+    background: none;
+    margin-left: 11px;
+}
+.old-comments{
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+.old-comments img{
+    width: 30px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+.old-comments h3{
+    font-size: 17px;
+    margin-bottom: 3px;
+}
+.old-comments h3 span{
+    font-size: 14px;
+    color: #ccc;
+    font-weight: 400;
+    margin-left: 10px;
+}
+.old-comments .comment-action{
+    display: flex;
+    align-items: center;
+    margin: 8px 0;
+    font-size: 14px;
+}
+.old-comments .comment-action img{
+    border-radius: 0;
+    width: 24px;
+    margin-right: 5px;
+}
+.old-comments .comment-action span{
+    margin-right: 20px;
+    color: #5a5a5a;
+}
+.old-comments .comment-action a{
+    color: blue;
+}
+
+
+
+/* -----again media---- */
+ @media (max-width:900px) {
+    .play-video{
+        flex-basis: 100%;
+    }
+    .sidebar-video{
+        flex-basis: 100%;
+    }
+    .play-container-vdo{
+        padding-left: 5%;
+    }
+    .vid-descripition{
+        padding-left: 0;
+    }
+    .old-comments .comment-action span{
+        margin-right: 6px;
+    }
+    .old-comments .comment-action a{
+        font-size: 11px;
+    }
+    .play-video .play-video-info a img{
+        margin-right: 13px;
+    }
+    .play-video .play-video-info a{
+        margin-left: 0;
+        margin-right: 10px;
+        margin-top: 15px;
+    }
+ }
