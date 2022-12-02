@@ -10,7 +10,30 @@ menuIcon.onclick = function(){
 
  /* ----page-loader---- */
 
-var preLoader = document.querySelector("#pageloader");
-function myfunction(){
-    preLoader.style.display="none";
-}
+// var preLoader = document.querySelector("#pageloader");
+// function myfunction(){
+//     preLoader.style.display="none";
+// }
+
+
+// ----STICKY NAV----
+
+num = 50,
+
+$(window).bind('scroll',function (){
+   if($(window).scrollTop()>num ) {
+    $('header').addClass('fixed');
+   }else{
+    $('header').removeClass('fixed');
+   }
+});
+
+
+$('.banner').slick({
+    infinite: true,
+    slidesToShow: 1, 
+    slidesToScroll:1,
+    arrows: false, 
+    dots: true,
+    speed: 500,
+});

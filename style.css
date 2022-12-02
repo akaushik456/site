@@ -24,6 +24,9 @@ header{
     width: 100%;
     display: flex;
 }
+.fixed{
+    display: block;
+}
 .one-container{
     width: 1360px;
     margin: 0 auto;
@@ -263,13 +266,14 @@ nav{
     justify-content: space-between;
     margin-bottom: 8px;
 }
-.side-vdo-list img{
-    width: 50%;
+.side-vdo-list a img{
+    width: 100%;
 }
 .side-vdo-list .small-thumbnail{
     flex-basis: 49%;
 }
 .side-vdo-list .vid-info{
+    margin-left: 15px;
     flex-basis: 49%;
 }
 
