@@ -10,10 +10,10 @@ menuIcon.onclick = function(){
 
  /* ----page-loader---- */
 
-// var preLoader = document.querySelector("#pageloader");
-// function myfunction(){
-//     preLoader.style.display="none";
-// }
+var preLoader = document.querySelector("#pageloader");
+function myfunction(){
+    preLoader.style.display="none";
+}
 
 
 // ----STICKY NAV----
