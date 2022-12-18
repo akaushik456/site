@@ -24,18 +24,18 @@ header{
     width: 100%;
     display: flex;
 }
-/* .fixed{
+.fixed{
     display: block;
-} */
+}
 .one-container{
     width: 1360px;
     margin: 0 auto;
 }
-.dropmenu {
-    display: none;
-}
-.dropmenu a{
+.dropdown {
     display: block;
+}
+#dropmenu {
+    display: none;
 }
 nav{
     width:100%;

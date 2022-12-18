@@ -50,3 +50,9 @@ input.addEventListener('change', function() {
   
   reader.readAsDataURL(files[0]);
 });
+
+var colors = ["red" , "green", "blue"]
+for (let color of colors) {
+  
+  (colors);
+}

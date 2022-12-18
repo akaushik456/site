@@ -10,23 +10,23 @@ menuIcon.onclick = function(){
 
  /* ----page-loader---- */
 
-var preLoader = document.querySelector("#pageloader");
-function myfunction(){
-    preLoader.style.display="none";
-}
+// var preLoader = document.querySelector("#pageloader");
+// function myfunction(){
+//     preLoader.style.display="none";
+// }
 
 
 // ----STICKY NAV----
 
-// num = 50,
+num = 50,
 
-// $(window).bind('scroll',function (){
-//    if($(window).scrollTop()>num ) {
-//     $('header').addClass('fixed');
-//    }else{
-//     $('header').removeClass('fixed');
-//    }
-// });
+$(window).bind('scroll',function (){
+   if($(window).scrollTop()>num ) {
+    $('header').addClass('fixed');
+   }else{
+    $('header').removeClass('fixed');
+   }
+});
 
 
 $('.banner').slick({
@@ -51,16 +51,10 @@ function hideVideo(e) {
 
 // ----dropdown----
 
-$('.dropdown img').on('click',function(){
-    $('dropmenu a').slideToggle(280);
-  });
   
 
-  var colors = ["red" , "green", "blue"]
-for (let color of colors) {
-  
-  (colors);
-}
+
+
 
 //   ----file choosen---
 
@@ -113,6 +107,6 @@ input.addEventListener('change', function() {
   reader.onprogress = function (e) {
     console.log('progress: ', Math.round((e.loaded * 100) / e.total));
   };
-  
+    
   reader.readAsDataURL(files[0]);
 });
