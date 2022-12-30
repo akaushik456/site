@@ -18,14 +18,13 @@ menuIcon.onclick = function(){
 
 // ----STICKY NAV----
 
-num = 50,
-
-$(window).bind('scroll',function (){
-   if($(window).scrollTop()>num ) {
+var num = 30;
+$(window).bind('scroll',function() {
+  if($(window).scrollTop() > num) {
     $('header').addClass('fixed');
-   }else{
+  } else {
     $('header').removeClass('fixed');
-   }
+  }
 });
 
 
@@ -51,7 +50,9 @@ function hideVideo(e) {
 
 // ----dropdown----
 
-  
+$('.dropdown').on('click',function(){
+  $('.un-dorp').slideToggle(280);
+});
 
 
 
@@ -86,27 +87,27 @@ function hideVideo(e) {
 // video upload
 
 
-const input = document.getElementById('file-input');
-const video = document.getElementById('video');
-const videoSource = document.createElement('source');
+// const input = document.getElementById('file-input');
+// const video = document.getElementById('video');
+// const videoSource = document.createElement('source');
 
-input.addEventListener('change', function() {
-  const files = this.files || [];
+// input.addEventListener('change', function() {
+//   const files = this.files || [];
 
-  if (!files.length) return;
+//   if (!files.length) return;
   
-  const reader = new FileReader();
+//   const reader = new FileReader();
 
-  reader.onload = function (e) {
-    videoSource.setAttribute('src', e.target.result);
-    video.appendChild(videoSource);
-    video.load();
-    video.play();
-  };
+//   reader.onload = function (e) {
+//     videoSource.setAttribute('src', e.target.result);
+//     video.appendChild(videoSource);
+//     video.load();
+//     video.play();
+//   };
   
-  reader.onprogress = function (e) {
-    console.log('progress: ', Math.round((e.loaded * 100) / e.total));
-  };
+//   reader.onprogress = function (e) {
+//     console.log('progress: ', Math.round((e.loaded * 100) / e.total));
+//   };
     
-  reader.readAsDataURL(files[0]);
-});
+//   reader.readAsDataURL(files[0]);
+// });

@@ -24,6 +24,19 @@ header{
     width: 100%;
     display: flex;
 }
+header.fixed{
+    position: fixed;
+    background: #fff;
+    z-index: 2;
+}
+.un-dorp{
+    display: none;
+    position: absolute;
+    left: -50px;
+    margin: 0px 0;
+    padding-top: 0;
+    padding: 0px 0 10px 0;
+}
 .fixed{
     display: block;
 }
@@ -33,9 +46,7 @@ header{
 }
 .dropdown {
     display: block;
-}
-#dropmenu {
-    display: none;
+    position: relative;
 }
 nav{
     width:100%;

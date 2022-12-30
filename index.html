@@ -31,7 +31,7 @@
           <div class="right-img">
             <div class="dropdown">
               <img src="./images/upload.png">
-              <div id="dropmenu" onclick="settingFunct()">
+              <div class="un-dorp">
                 <a href="./upload.html">Upload Video</a>
               </div>
             </div>
@@ -177,33 +177,9 @@
       </div>
 
     </div>
-    <form onsubmit="sendEmail; reset(); return false;">
-      <h3>GET IN TOUCH</h3>
-      <input type="text" id="name" placeholder="Your name" required>
-      <input type="email" id="email" placeholder="Email id" required>
-      <input type="text" id="phone" placeholder="Your no." required>
-      <textarea  id="message" rows="4" placeholder="may i help you?"></textarea>
-      <button type="submit">Send</button>
-  </form>
+
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-
-<script src="https://smtpjs.com/v3/smtp.js"></script>
 <script src="./script.js"></script>
-<script>
-    function sendEmail() {
-        Email.send({
-            Host : "smtp.gmail.com",
-            Username : "Kaushik Aman",
-            Password : "Pratyushaman",
-            To : 'kaushikaman239@gmail.com',
-            From : document.getElementById("email").value,
-            Subject : "new contact form enquiry",
-            Body : "this is body"
-        }).then(
-            message => alert(message)
-        );
-    }
-</script>
 </html>
