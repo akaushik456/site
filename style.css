@@ -5,17 +5,55 @@
     padding: 0;
     font-family: 'poppins',sans-serif;
 }
+:root{
+    --body-color:#efefef;
+    --bg-color:#fff;
+}
+
+.dark-theme{
+    --body-color:#0a0a0a;
+    --nav-color:#000;
+    --text-color: #5a5a5a;
+    --bg-color:#fff;
+}
+
+
 body{
     width: 100%;
     margin: 0;
     padding: 0;
+    background: var(--body-color);
+    transition: background 0.3s;
 }
 ul{
     list-style: none;
 }
 a{
     text-decoration: none;
-    color: #5a5a5a;
+    color: var(--text-color);
+}
+#dark-btn{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: #ccc;
+    width: 35px;
+    border-radius: 15px;
+    padding: 2px 3px;
+    cursor: pointer;
+    display: flex;
+    transition: padding-left 0.5s background 0.5s;
+}
+#dark-btn span{
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: #fff;
+    display: inline-block;
+}
+#dark-btn.dark-btn-on{
+    padding-left: 19px;
+    background: #000;
 }
 img{
     cursor: pointer;
@@ -48,7 +86,26 @@ header.fixed{
     display: block;
     position: relative;
 }
+.notify-drop{
+    position: relative;
+    display: block;
+}
+.drop-img{
+    display: none;
+    position: absolute;
+    border: 1px solid #bbb;
+    width: 100px;
+    right: -50%;
+    text-align: center;
+}
+.responsive{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
 nav{
+    background: var(--nav-color);
     width:100%;
     justify-content: space-between;
     padding: 10px 2%;
@@ -105,6 +162,7 @@ nav{
     border-radius: 25px;
 }
 .sidebar{
+    background: var(--nav-color);
     width: 20%;
     position: fixed;
     height: 100vh;
@@ -170,7 +228,7 @@ nav{
 /* -----main content---- */
 
 .container{
-    background: #f5f5f5;
+    background: var(--nav-color);
     padding-left: 19%;
     padding-right: 2%;
     padding-top: 20px;
@@ -230,7 +288,7 @@ nav{
     font-weight: bold;
 }
 .vid-info a{
-    color: #000;
+    color: var(--text-color);
     font-weight: 600;
     display: block;
     margin-bottom: 5px;
@@ -253,7 +311,7 @@ nav{
         width: 100px;
     }
     .right-img img{
-         display: none;
+         display: block;
     }
     .right-img .user-image{
         display: block;
@@ -439,13 +497,21 @@ nav{
 .old-comments .comment-action a{
     color: blue;
 }
-
+.right-img .notify-drop .upload{
+    font-size: 15px;
+}
 
 
 /* -----again media---- */
  @media (max-width:900px) {
     .play-video{
         flex-basis: 100%;
+    }
+    .drop-img{
+        text-align: center;
+    }
+    .responsive{
+        display: none;
     }
     .sidebar-video{
         flex-basis: 100%;

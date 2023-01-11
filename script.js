@@ -55,6 +55,12 @@ $('.dropdown').on('click',function(){
 });
 
 
+// ----dropdown-2---
+
+$('.user-image').on('click',function(){
+  $('.drop-img').slideToggle(280);
+});
+
 
 
 //   ----file choosen---
@@ -111,3 +117,13 @@ $('.dropdown').on('click',function(){
     
 //   reader.readAsDataURL(files[0]);
 // });
+
+
+
+var darkBtn = document.getElementById('dark-btn')
+
+
+darkBtn.onclick = function() {
+  darkBtn.classList.toggle('dark-btn-on');
+  document.body.classList.toggle("dark-theme")
+}
